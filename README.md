@@ -39,6 +39,7 @@ ZeroHate is a Chrome extension that automatically detects and replaces hate spee
 3. Enable **Developer Mode** (toggle in the top right).  
 4. Click **Load unpacked** and select the `zerohate-chrome-extension` folder.  
 5. Open Instagram and see the extension in action.
+6. Note: You have to refresh before it's applied
 
 ---
 
