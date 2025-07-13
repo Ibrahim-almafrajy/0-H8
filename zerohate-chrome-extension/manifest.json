@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "0-H8 Webhook Tester",
+  "version": "1.0",
+  "description": "Send Instagram comments to webhook.site 18.0",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "webRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "https://webhook.site/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+  "16": "favicon_io/favicon-16x16.png",
+  "32": "favicon_io/favicon-32x32.png"
+},
+"action": {
+  "default_popup": "popup.html",
+  "default_icon": {
+    "16": "favicon_io/favicon-16x16.png",
+    "32": "favicon_io/favicon-32x32.png"
+  }
+}
+
+}

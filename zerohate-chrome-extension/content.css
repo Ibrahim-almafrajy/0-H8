@@ -1,0 +1,4 @@
+/* For smoother blur transitions */
+span._ap3a._aaco._aacu._aacx._aad7._aade {
+  transition: filter 0.3s ease;
+}
